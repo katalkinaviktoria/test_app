@@ -1,0 +1,2 @@
+class EmployeeSession < ApplicationRecord
+end

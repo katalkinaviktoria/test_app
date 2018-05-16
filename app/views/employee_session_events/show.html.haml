@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Id employee:
+  = @employee_session_event.id_employee
+%p
+  %b Workday:
+  = @employee_session_event.workday
+%p
+  %b Id system:
+  = @employee_session_event.id_system
+%p
+  %b Id event:
+  = @employee_session_event.id_event
+%p
+  %b Importance:
+  = @employee_session_event.importance
+%p
+  %b Eventtime:
+  = @employee_session_event.eventtime
+
+= link_to 'Edit', edit_employee_session_event_path(@employee_session_event)
+\|
+= link_to 'Back', employee_session_events_path

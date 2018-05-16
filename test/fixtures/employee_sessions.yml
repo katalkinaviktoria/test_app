@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_employee: 1
+  workday: 2018-03-29
+  id_system: 1
+  entrytime: 2018-03-29 15:09:36
+  exittime: 2018-03-29 15:09:36
+
+two:
+  id_employee: 1
+  workday: 2018-03-29
+  id_system: 1
+  entrytime: 2018-03-29 15:09:36
+  exittime: 2018-03-29 15:09:36

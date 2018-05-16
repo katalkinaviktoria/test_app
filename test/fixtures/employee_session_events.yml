@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_employee: 1
+  workday: 2018-03-30
+  id_system: 1
+  id_event: 1
+  importance: 1
+  eventtime: 2018-03-30 12:22:20
+
+two:
+  id_employee: 1
+  workday: 2018-03-30
+  id_system: 1
+  id_event: 1
+  importance: 1
+  eventtime: 2018-03-30 12:22:20

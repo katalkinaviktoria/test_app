@@ -1,0 +1,28 @@
+= form_for @employee_session_event do |f|
+  - if @employee_session_event.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@employee_session_event.errors.count, "error")} prohibited this employee_session_event from being saved:"
+      %ul
+        - @employee_session_event.errors.full_messages.each do |message|
+          %li= message
+
+  .field
+    = f.label :id_employee
+    = f.number_field :id_employee
+  .field
+    = f.label :workday
+    = f.date_select :workday
+  .field
+    = f.label :id_system
+    = f.number_field :id_system
+  .field
+    = f.label :id_event
+    = f.number_field :id_event
+  .field
+    = f.label :importance
+    = f.number_field :importance
+  .field
+    = f.label :eventtime
+    = f.time_select :eventtime
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,2 @@
+class EmployeeSessionEvent < ApplicationRecord
+end

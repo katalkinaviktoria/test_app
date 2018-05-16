@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Id employee:
+  = @employee_session.id_employee
+%p
+  %b Workday:
+  = @employee_session.workday
+%p
+  %b Id system:
+  = @employee_session.id_system
+%p
+  %b Entrytime:
+  = @employee_session.entrytime
+%p
+  %b Exittime:
+  = @employee_session.exittime
+
+= link_to 'Edit', edit_employee_session_path(@employee_session)
+\|
+= link_to 'Back', employee_sessions_path

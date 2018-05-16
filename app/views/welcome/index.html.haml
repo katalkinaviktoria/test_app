@@ -1,0 +1,7 @@
+= form_for :jsonfile, url: upload_path do |f|
+  .field
+    = f.file_field 'file'
+  .field
+    = f.file_field 'file1'
+  .actions
+    = f.submit

@@ -1,0 +1,29 @@
+%h1 Listing employee_sessions
+
+%table
+  %thead
+    %tr
+      %th Id employee
+      %th Workday
+      %th Id system
+      %th Entrytime
+      %th Exittime
+      %th
+      %th
+      %th
+
+  %tbody
+    - @employee_sessions.each do |employee_session|
+      %tr
+        %td= employee_session.id_employee
+        %td= employee_session.workday
+        %td= employee_session.id_system
+        %td= employee_session.entrytime
+        %td= employee_session.exittime
+        %td= link_to 'Show', employee_session
+        %td= link_to 'Edit', edit_employee_session_path(employee_session)
+        %td= link_to 'Destroy', employee_session, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Employee session', new_employee_session_path
