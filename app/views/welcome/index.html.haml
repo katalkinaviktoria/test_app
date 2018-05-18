@@ -1,7 +1,14 @@
-= form_for :jsonfile, url: upload_path do |f|
-  .field
-    = f.file_field 'file'
-  .field
-    = f.file_field 'file1'
-  .actions
-    = f.submit
+-i=0
+-@data.each do |data|
+  .graph{id: "graph#{i}"}
+    =metrics_graphic_for data, title: "Downloads", width: 600, height: 250, target: "#graph#{i}", chart_type:"line" , x_accessor: 'date', y_accessor: 'value', time_format: '%Y-%m-%d'
+  -i=i+1
+
+-#
+-# = form_for :jsonfile, url: upload_path do |f|
+-#   .field
+-#     = f.file_field 'file'
+-#   .field
+-#     = f.file_field 'file1'
+-#   .actions
+-#     = f.submit

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   post 'upload' => 'welcome#upload', :as => :upload
+  get 'reload' => 'welcome#reload', :as => :reload
   resources :user_sessions
   resources :users
 

@@ -23,6 +23,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'carrierwave', '~> 1.0'
 gem 'sorcery'
 
+gem 'metrics-graphics-rails', '~> 2.9'
 gem 'activerecord-import'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
